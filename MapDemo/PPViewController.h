@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface PPViewController : UIViewController
-
+#import <MapKit/MapKit.h>
+@interface PPViewController : UIViewController<CLLocationManagerDelegate>
+@property(weak,nonatomic)IBOutlet MKMapView*mapview;
 @end
